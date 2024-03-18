@@ -1,8 +1,14 @@
+'use client';
+
 import React from 'react';
 import Link from "next/link";
-import { FaFeatherAlt } from "react-icons/fa";
+import {FaFeatherAlt} from "react-icons/fa";
+import {usePathname} from "next/navigation";
+import classnames from 'classnames';
 
 const NavBar = () => {
+    const currentPath = usePathname();
+
     const links = [
         {label: 'Dashboard', href: '/'},
         {label: 'Issues', href: '/issues'}
@@ -10,12 +16,17 @@ const NavBar = () => {
 
     return (
         <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center'>
-            <Link href='/'><FaFeatherAlt /></Link>
+            <Link href='/'><FaFeatherAlt/></Link>
             <ul className='flex space-x-6 px-5'>
                 {links.map(link =>
-                    <Link className='text-zinc-500 hover:text-zinc-900 transition-colors'
-                          key={link.href}
-                          href={link.href}>{link.label}</Link>
+                    <Link
+                        className={classnames({
+                            'text-zinc-900': link.href === currentPath,
+                            'text-zinc-500': link.href !== currentPath,
+                            'hover:text-zinc-800 transition-colors': true
+                        })}
+                        key={link.href}
+                        href={link.href}>{link.label}</Link>
                 )}
             </ul>
         </nav>
