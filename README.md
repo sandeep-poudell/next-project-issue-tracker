@@ -30,4 +30,10 @@ npm install classnames
 
 npm install prisma
 npx prisma init
+    
+    Formating prisma schema
+        npx prisma format
+    Migrating 
+        npx prisma migrate dev
+               
 ```
