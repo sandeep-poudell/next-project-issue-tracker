@@ -27,4 +27,7 @@ cd next-project-issue-tracker
 
 npm install react-icons
 npm install classnames
+
+npm install prisma
+npx prisma init
 ```
