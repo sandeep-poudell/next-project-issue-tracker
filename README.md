@@ -24,4 +24,6 @@ npx create-next-app@latest
 
 
 cd next-project-issue-tracker
+
+npm install react-icons
 ```
