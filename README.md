@@ -48,4 +48,6 @@ npm install --save react-simplemde-editor easymde
 npm install react-hook-form
 
 npm install axios
+
+npm install @hookform/resolvers
 ```
