@@ -42,4 +42,9 @@ npm install zod
 
 # component library
 npm install @redix-ui/themes
+
+npm install react-hook-form
+
+npm install --save react-simplemde-editor easymde
+
 ```
