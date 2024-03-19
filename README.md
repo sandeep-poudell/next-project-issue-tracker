@@ -38,5 +38,8 @@ npx prisma init
         npx prisma migrate dev
 
 # for data validation
-npm install zod        
+npm install zod
+
+# component library
+npm install @redix-ui/themes
 ```
