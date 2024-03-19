@@ -41,10 +41,11 @@ npx prisma init
 npm install zod
 
 # component library
-npm install @redix-ui/themes
-
-npm install react-hook-form
+npm install @radix-ui/themes
 
 npm install --save react-simplemde-editor easymde
 
+npm install react-hook-form
+
+npm install axios
 ```
