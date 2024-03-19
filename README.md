@@ -28,6 +28,7 @@ cd next-project-issue-tracker
 npm install react-icons
 npm install classnames
 
+# database ORM
 npm install prisma
 npx prisma init
     
@@ -35,5 +36,7 @@ npx prisma init
         npx prisma format
     Migrating 
         npx prisma migrate dev
-               
+
+# for data validation
+npm install zod        
 ```
